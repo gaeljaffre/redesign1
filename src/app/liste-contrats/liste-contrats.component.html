@@ -1,0 +1,21 @@
+&nbsp;
+<div class="contract-item" *ngFor="let contrat of contractsList">
+  <B>
+  {{ contrat.country }} &nbsp;&nbsp;
+  </B>
+
+  <!-- Description en info-bulle -->
+  <a *ngIf="contrat.description" [title]="contrat.description">
+  {{ contrat.name }}
+  </a>
+  <font *ngIf="!contrat.description">
+  {{ contrat.name }}
+  </font>
+
+  {{ contrat.ddv }} - {{ contrat.dfv }}
+
+  &nbsp;
+  <button>
+    ssss
+  </button>
+</div>
