@@ -37,6 +37,7 @@ export const listeContrats = [
   {
     id: 5,
     name: 'SUPERWURST',
+    description: 'The real german sausage',
     country: 'DE',
     gin: '180000000003',
     ddv: '01/01/2020',
