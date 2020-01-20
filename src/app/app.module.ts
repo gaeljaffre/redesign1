@@ -10,13 +10,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ListeContratsComponent } from './liste-contrats/liste-contrats.component';
+import { DetailContratComponent } from './detail-contrat/detail-contrat.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, MatIconModule, HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: ListeContratsComponent },
+      { path: 'details', component: DetailContratComponent },
       ]) ],
-  declarations: [ AppComponent, TopBarComponent, ListeContratsComponent ],
+  declarations: [ AppComponent, TopBarComponent, ListeContratsComponent, DetailContratComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { 
