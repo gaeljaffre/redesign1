@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { listeContrats } from '../contrats';
+import { DetailContratService } from '../detail-contrat.service';
 
 @Component({
   selector: 'app-liste-contrats',
@@ -11,9 +12,16 @@ export class ListeContratsComponent implements OnInit {
 
   contractsList = listeContrats;
 
-  constructor() { }
+  constructor(
+    private detailContratService: DetailContratService
+  ) { }
 
   ngOnInit() {
+  }
+
+  afficherDetailContrat(contrat) {
+    this.detailContratService.detailContrat(contrat);
+    //window.alert('manage ' + contrat.name);
   }
 
 }

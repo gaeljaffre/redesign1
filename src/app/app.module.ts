@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ListeContratsComponent } from './liste-contrats/liste-contrats.component';
 import { DetailContratComponent } from './detail-contrat/detail-contrat.component';
+import { DetailContratService } from './detail-contrat.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, MatIconModule, HttpClientModule,
@@ -19,7 +20,8 @@ import { DetailContratComponent } from './detail-contrat/detail-contrat.componen
       { path: 'details', component: DetailContratComponent },
       ]) ],
   declarations: [ AppComponent, TopBarComponent, ListeContratsComponent, DetailContratComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [DetailContratService]
 })
 export class AppModule { 
 

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { DetailContratService } from '../detail-contrat.service';
 
 @Component({
   selector: 'app-detail-contrat',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailContratComponent implements OnInit {
 
-  constructor() { }
+  contrat = null;
+
+  constructor(
+    private route: ActivatedRoute,
+    private detailContratService: DetailContratService
+  ) { }
 
   ngOnInit() {
+    this.contrat = this.detailContratService.contratCourant();
   }
 
 }
