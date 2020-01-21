@@ -15,8 +15,12 @@
   {{ contrat.ddv }} - {{ contrat.dfv }}
 
   &nbsp;
-  <button (click)="afficherDetailContrat(contrat)" [routerLink]="['/details', contrat]">
-    <mat-icon svgIcon="plane"></mat-icon>&nbsp;
+  <button
+    (click)="sauverContratCourant(contrat)"
+    [routerLink]="['/details']"
+  >
+    <mat-icon svgIcon="plane"></mat-icon>
+    &nbsp;
     Manage
   </button>
 </div>

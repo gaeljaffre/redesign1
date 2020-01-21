@@ -19,7 +19,7 @@ export class ListeContratsComponent implements OnInit {
   ngOnInit() {
   }
 
-  afficherDetailContrat(contrat) {
+  sauverContratCourant(contrat) {
     this.detailContratService.detailContrat(contrat);
     //window.alert('manage ' + contrat.name);
   }

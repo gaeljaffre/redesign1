@@ -13,14 +13,16 @@ import { ListeContratsComponent } from './liste-contrats/liste-contrats.componen
 import { DetailContratComponent } from './detail-contrat/detail-contrat.component';
 import { DetailContratService } from './detail-contrat.service';
 import { BandeauContratComponent } from './bandeau-contrat/bandeau-contrat.component';
+import { ListeOffresComponent } from './liste-offres/liste-offres.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, MatIconModule, HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: ListeContratsComponent },
       { path: 'details', component: DetailContratComponent },
+      { path: 'offres', component: ListeOffresComponent },
       ]) ],
-  declarations: [ AppComponent, TopBarComponent, ListeContratsComponent, DetailContratComponent, BandeauContratComponent ],
+  declarations: [ AppComponent, TopBarComponent, ListeContratsComponent, DetailContratComponent, BandeauContratComponent, ListeOffresComponent ],
   bootstrap:    [ AppComponent ],
   providers: [DetailContratService]
 })
