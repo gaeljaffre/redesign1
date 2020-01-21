@@ -20,7 +20,7 @@ export const listeContrats = [
   {
     id: 3,
     name: 'BUTAGAZ',
-    description: 'The best example for IT',
+    description: 'The best case study for Catherine',
     country: 'FR',
     gin: '180000000001',
     ddv: '01/01/2021',

@@ -3,5 +3,26 @@
 > 
 </app-bandeau-contrat>
 <H1>
-Nom : {{ contrat.name }}
+{{ contrat.name }}
 </H1>
+
+<table>
+  <TR>
+    <TD>Country</TD>
+    <TD>{{ contrat.country }}</TD>
+  </TR>
+  <TR>
+    <TD>Validity</TD>
+    <TD>{{ contrat.ddv }} - {{ contrat.dfv }}</TD>
+  </TR>
+  <TR>
+    <TD>GIN</TD>
+    <TD>{{ contrat.gin }}</TD>
+  </TR>
+  <TR>
+    <TD>Comment</TD>
+    <TD>{{ contrat.description }}</TD>
+  </TR>
+
+ 
+</table>
