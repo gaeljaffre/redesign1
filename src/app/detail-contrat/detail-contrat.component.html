@@ -2,14 +2,20 @@
   [contractName]=contrat.name
 > 
 </app-bandeau-contrat>
-<H1>
-{{ contrat.name }}
-</H1>
+&nbsp;&nbsp;&nbsp;
 
-<table>
+
+<div class="table-users">
+   <div class="header">{{ contrat.name }}</div>
+   
+   <table cellspacing="0">
   <TR>
     <TD>Country</TD>
     <TD>{{ contrat.country }}</TD>
+  </TR>
+  <TR>
+    <TD>Type</TD>
+    <TD>{{ contrat.type }}</TD>
   </TR>
   <TR>
     <TD>Validity</TD>
@@ -24,5 +30,5 @@
     <TD>{{ contrat.description }}</TD>
   </TR>
 
- 
-</table>
+   </table>
+</div>
