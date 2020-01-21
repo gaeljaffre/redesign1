@@ -6,7 +6,8 @@ import { DetailContratService } from '../detail-contrat.service';
 @Component({
   selector: 'app-detail-contrat',
   templateUrl: './detail-contrat.component.html',
-  styleUrls: ['./detail-contrat.component.scss']
+  //styleUrls: ['./detail-contrat.component.scss']
+  styleUrls: ['../style_vert.scss']
 })
 export class DetailContratComponent implements OnInit {
 

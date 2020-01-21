@@ -31,9 +31,11 @@ export class AppModule {
   public constructor (
     private domSanitizer: DomSanitizer,
     public matIconRegistry: MatIconRegistry) {
-    //add custom material icons
-    matIconRegistry.addSvgIcon('plane', domSanitizer.bypassSecurityTrustResourceUrl('../assets/plane.svg'));
-        matIconRegistry.addSvgIcon('surf', domSanitizer.bypassSecurityTrustResourceUrl('../assets/surf.svg'));
-}
+      //add custom material icons
+      matIconRegistry.addSvgIcon('plane', domSanitizer.bypassSecurityTrustResourceUrl('../assets/plane.svg'));
+      matIconRegistry.addSvgIcon('surf', domSanitizer.bypassSecurityTrustResourceUrl('../assets/surf.svg'));
+      matIconRegistry.addSvgIcon('hand', domSanitizer.bypassSecurityTrustResourceUrl('../assets/hand.svg'));
+      matIconRegistry.addSvgIcon('contrat', domSanitizer.bypassSecurityTrustResourceUrl('../assets/contrat.svg'));
+    }
 
 }

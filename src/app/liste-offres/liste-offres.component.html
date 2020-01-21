@@ -5,7 +5,22 @@
 </app-bandeau-contrat>
 &nbsp;&nbsp;&nbsp;
 
-Liste des contrats
+<H3>Net remits</H3>
+
+
+<div class="table-users">
+   <div class="header">Net remits</div>
+   <table cellspacing="0">
+  <TR *ngFor="let offre of listeClauses">
+    <TD>{{ offre.ori }}</TD>
+    <TD>{{ offre.des }}</TD>
+    <TD>{{ offre.cie }}</TD>
+    <TD>{{ offre.cdr }}</TD>
+    <TD>{{ offre.farebasis }}</TD>
+    <TD>{{ offre.remise }} %</TD>
+  </TR>
+   </table>
+</div>
 
 
 <!-- Boutons -->
@@ -13,6 +28,8 @@ Liste des contrats
   [routerLink]="['/details']"
 >
   Back to contract
+  &nbsp;
+  <mat-icon svgIcon="contrat"></mat-icon>
 </button>
 &nbsp;
 <button
