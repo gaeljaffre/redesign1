@@ -12,6 +12,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ListeContratsComponent } from './liste-contrats/liste-contrats.component';
 import { DetailContratComponent } from './detail-contrat/detail-contrat.component';
 import { DetailContratService } from './detail-contrat.service';
+import { BandeauContratComponent } from './bandeau-contrat/bandeau-contrat.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, MatIconModule, HttpClientModule,
@@ -19,7 +20,7 @@ import { DetailContratService } from './detail-contrat.service';
       { path: '', component: ListeContratsComponent },
       { path: 'details', component: DetailContratComponent },
       ]) ],
-  declarations: [ AppComponent, TopBarComponent, ListeContratsComponent, DetailContratComponent ],
+  declarations: [ AppComponent, TopBarComponent, ListeContratsComponent, DetailContratComponent, BandeauContratComponent ],
   bootstrap:    [ AppComponent ],
   providers: [DetailContratService]
 })
