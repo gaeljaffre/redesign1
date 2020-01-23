@@ -62,16 +62,24 @@
   </div>
 </div>
 
-<button
-  [routerLink]="['/offres']"
->
-  Back to offers
-  &nbsp;
-  <mat-icon svgIcon="plane"></mat-icon>
-</button>
-&nbsp;
-<button
-  [routerLink]="['/']"
->
-  Back to menu
-</button>
+<table width="800px">
+<TR>
+  <TD width="100px"></TD>
+  <TD>
+    <button
+      [routerLink]="['/offres']"
+    >
+      Back to offers
+      &nbsp;
+      <mon-icone nomFichier="plane"></mon-icone>
+    </button>
+  </TD>
+  <TD>
+    <button
+      [routerLink]="['/']"
+    >
+      Back to menu
+    </button>
+  </TD>
+</TR>
+</table>
