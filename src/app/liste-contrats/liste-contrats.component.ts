@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { listeContrats } from '../contrats';
 import { DetailContratService } from '../detail-contrat.service';
-import { MonIconeComponent } from '../mon-icone.component';
+import { MonIconeComponent } from '../mon-icone/mon-icone.component';
 
 @Component({
   selector: 'app-liste-contrats',
