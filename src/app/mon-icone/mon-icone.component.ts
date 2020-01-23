@@ -15,12 +15,20 @@ export class MonIconeComponent implements OnInit {
 
   ngOnInit() {
     switch(this.nomFichier) {
-      case "plane": this.nomFichier="/assets/plane.svg";
+      case "plane":
+        this.nomFichier="/assets/plane.svg";
         this.largeur = 32;
         break;
-      case "surf": this.nomFichier="/assets/surf.svg";
+      case "surf":
+        this.nomFichier="/assets/surf.svg";
         break;
-      case "contrat": this.nomFichier="/assets/contrat.svg";
+      case "contrat": 
+        this.nomFichier="/assets/contrat.svg";
+        break;
+      case "pirate1":
+        this.largeur = 150;
+        this.hauteur = 200;
+        this.nomFichier="/assets/pirate1.svg";
         break;
       default: this.nomFichier="/assets/" + this.nomFichier;
         //window.alert('fichier : ' + this.nomFichier);
