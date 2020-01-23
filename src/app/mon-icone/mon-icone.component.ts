@@ -22,7 +22,9 @@ export class MonIconeComponent implements OnInit {
         break;
       case "contrat": this.nomFichier="/assets/contrat.svg";
         break;
-
+      default: this.nomFichier="/assets/" + this.nomFichier;
+        //window.alert('fichier : ' + this.nomFichier);
+      break;
     }
   }
 
