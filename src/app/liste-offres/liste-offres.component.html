@@ -18,6 +18,13 @@
     <TD>{{ offre.cdr }}</TD>
     <TD>{{ offre.farebasis }}</TD>
     <TD>{{ offre.remise }} %</TD>
+    <TD>
+      <button *ngIf="offre.upgradable"
+        title="Sky is not a limit!"
+      >
+        Upgrade O&amp;D
+      </button>
+    </TD>
   </TR>
    </table>
 </div>
