@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BandeauxComponent implements OnInit {
 
-  sidenavWidth = 4;
+  const initWidth = 7;
+
+  sidenavWidth = this.initWidth;
   ngStyle: string;
   
   constructor() { }
@@ -17,11 +19,17 @@ export class BandeauxComponent implements OnInit {
 
   increase() {
     this.sidenavWidth = 15;
-    console.log('increase sidenav width');
   }
   decrease() {
-    this.sidenavWidth = 4;
-    console.log('decrease sidenav width');
+    this.sidenavWidth = this.initWidth;
+  }
+
+  afficherAdmin() {
+    window.alert("Sorry, you don't have enough privileges");
+  }
+
+  afficherAide() {
+    window.alert("Call Natacha, the best PO, at 9-92-96. If she's not available, call C10.");
   }
 
 }
