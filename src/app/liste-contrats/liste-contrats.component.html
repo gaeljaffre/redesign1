@@ -1,0 +1,54 @@
+<H2>
+<table align=center>
+  <TR>
+    <TD>
+    <table>
+      <TR>
+        &nbsp;
+      </TR>
+      <TR>
+        Welcome to the new version of Robert S.
+      </TR>
+      <TR>
+        &nbsp;
+      </TR>
+      <TR>
+        Please find here your portfolio:
+      </TR>
+    </table>
+    </TD>
+    <TD>
+      <img src="assets/pirate1.svg" height=200 width=300>
+<!--
+      <img src="../assets/plane.svg" height=150 width=300>
+-->
+    </TD>
+</table>
+</H2>
+<H2>
+ 
+<table align=center class="contract-item" *ngFor="let contrat of contractsList">
+  <B>
+  {{ contrat.country }} &nbsp;&nbsp;
+  </B>
+
+  <!-- Description en info-bulle -->
+  <a *ngIf="contrat.description" [title]="contrat.description">
+  {{ contrat.name }}
+  </a>
+  <font *ngIf="!contrat.description">
+  {{ contrat.name }}
+  </font>
+
+  {{ contrat.ddv }} - {{ contrat.dfv }}
+
+  &nbsp;
+  <button
+    (click)="sauverContratCourant(contrat)"
+    [routerLink]="['/details']"
+  >
+    <mon-icone nomFichier="plane"></mon-icone>
+    &nbsp;
+    Manage
+  </button>
+</table>
