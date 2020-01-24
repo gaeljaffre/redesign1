@@ -18,6 +18,10 @@ body {
    text-transform: uppercase;
 }
 
+h3 {
+  padding: 30px;
+}
+
 img {
    border-radius: 50%;
    height: $imageSmall;
@@ -28,10 +32,10 @@ img {
    border: 1px solid darken($baseColor, 5%);
    border-radius: $borderRadius;
    box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
-   max-width: calc(100% - 2em);
+/*   max-width: calc(100% - 2em);*/
    margin: 1em auto;
    overflow: hidden;
-   width: 600px;
+   width: 70%;
    /*
    margin-left:5%; 
    */
@@ -67,6 +71,28 @@ table {
       &:nth-child(2n) { background-color: white; }
       &:nth-child(2n+1) { background-color: lighten($baseColor, 55%) }
    }
+}
+
+.table-vide {
+   width: 100%;
+   
+   td, th { 
+      color: white;
+      background-color: white;
+      padding: $padding; 
+   }
+   
+   td {
+      text-align: center;
+      vertical-align: middle;
+      
+      &:last-child {
+         font-size: 0.95em;
+         line-height: 1.4;
+         text-align: left;
+      }
+   }
+   
 }
 
 @media screen and (max-width: 700px) {   

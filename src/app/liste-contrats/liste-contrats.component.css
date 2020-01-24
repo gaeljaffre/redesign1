@@ -1,5 +1,7 @@
 .contract-item {
   width: 100%;
+  min-width: 400px;
+  max-width: 800px;
 /*  width: 100%;
   min-width: 200px;
   max-width: 1200px;

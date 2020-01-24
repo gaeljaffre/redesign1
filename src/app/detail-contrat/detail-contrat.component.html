@@ -5,7 +5,7 @@
 &nbsp;&nbsp;&nbsp;
 
 
-<div class="table-users">
+<div align=center class="table-users">
    <div class="header">{{ contrat.name }}</div>
    
    <table cellspacing="0">
@@ -37,6 +37,9 @@
 </div>
 
 <!-- Boutons -->
+<table class="table-vide">
+  <TR>
+    <TD>
 <button
   [routerLink]="['/offres']"
 >
@@ -44,9 +47,16 @@
   &nbsp;
   <mon-icone nomFichier="plane"></mon-icone>
 </button>
-&nbsp;
+
+</TD>
+<TD>
+
 <button
   [routerLink]="['/']"
 >
   Back to menu
 </button>
+
+</TD>
+  </TR>
+</table>
