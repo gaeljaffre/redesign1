@@ -5,5 +5,6 @@ div {
 }
 
 tr {
+  margin: 50px;
   height: 60px;
 }
