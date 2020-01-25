@@ -29,7 +29,7 @@ export class BandeauxComponent implements OnInit {
   }
 
   afficherAide() {
-    window.alert("Call Natacha, the best PO, at 9-92-96. If she's not available, call C10.");
+    window.alert("Call Natacha at 9-92-96, she can solve anything.\nIf she's not available, call C10.");
   }
 
 }

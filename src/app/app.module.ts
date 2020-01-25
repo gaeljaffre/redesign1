@@ -16,6 +16,7 @@ import { ListeOffresComponent } from './liste-offres/liste-offres.component';
 import { UpgradeOffreComponent } from './upgrade-offre/upgrade-offre.component';
 import { MonIconeComponent } from './mon-icone/mon-icone.component';
 import { BandeauxComponent } from './bandeaux/bandeaux.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule, DemoMaterialModule, BrowserAnimationsModule,
@@ -24,8 +25,9 @@ import { BandeauxComponent } from './bandeaux/bandeaux.component';
       { path: 'details', component: DetailContratComponent },
       { path: 'offres', component: ListeOffresComponent },
       { path: 'upgrade', component: UpgradeOffreComponent },
+      { path: 'about', component: AboutComponent },
       ]) ],
-  declarations: [ AppComponent, TopBarComponent, ListeContratsComponent, DetailContratComponent, BandeauContratComponent, ListeOffresComponent, UpgradeOffreComponent, MonIconeComponent, BandeauxComponent ],
+  declarations: [ AppComponent, TopBarComponent, ListeContratsComponent, DetailContratComponent, BandeauContratComponent, ListeOffresComponent, UpgradeOffreComponent, MonIconeComponent, BandeauxComponent, AboutComponent ],
   bootstrap:    [ AppComponent ],
   providers: [DetailContratService]
 })
