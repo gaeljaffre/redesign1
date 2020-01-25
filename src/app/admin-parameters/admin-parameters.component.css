@@ -3,3 +3,7 @@ div {
   min-height: 400px;
   max-width: 600px;
 }
+
+tr {
+  height: 60px;
+}
